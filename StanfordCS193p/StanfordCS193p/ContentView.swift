@@ -24,7 +24,7 @@ struct ContentView: View {
                     .aspectRatio(1, contentMode: .fit)
                     .foregroundStyle(colors[index])
             }
-            MatchMarkers(matches: [.exact, .inexact, .nomatch, .exact])
+            MatchMarkers(matches: [.exact, .inexact, .nomatch, .exact, .exact, .inexact])
         }
     }
 }
