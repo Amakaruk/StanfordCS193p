@@ -7,7 +7,16 @@
 
 import SwiftUI
 
+enum Colors {
+    case red
+    case green
+    case blue
+    case yellow
+}
+
 struct ContentView: View {
+    @State private var numberOfPegs = 4
+
     var body: some View {
         VStack {
             pegs(colors: [.red, .green, .green, .yellow])

@@ -45,5 +45,21 @@ struct MatchMarkers: View {
 }
 
 #Preview {
-    MatchMarkers(matches: [.exact, .inexact, .nomatch, .exact, .exact, .inexact])
+
+    HStack {
+// Expanding preview section to match assignment requirements.
+        HStack {
+            Circle()
+                .frame(width: 50)
+            Circle()
+                .frame(width: 50)
+            Circle()
+                .frame(width: 50)
+            Circle()
+                .frame(width: 50)
+        }
+
+        MatchMarkers(matches: [.exact, .inexact, .nomatch, .exact, .exact, .inexact])
+    }
+    .padding()
 }
